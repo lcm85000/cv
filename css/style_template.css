@@ -1,9 +1,10 @@
 /* General Styles */
 body {
+    background-color: #009990;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    background-color: #009990;
+    
 }
    
 /* Nav Styles */
@@ -25,11 +26,12 @@ nav p, nav a {
 
 nav a {
     background-color: #074799;
-    color: white;
+    color: green;
 }
 
 nav a:hover {
-    background-color: orange;
+    
+    color: orange;
 }
 
 /* Footer Styles */
@@ -47,11 +49,11 @@ footer a {
     border-width: 4px;
     border-radius: 30%;
     border-color: #074799;
-    color: white;
+    color: green;
 }
 
 footer a:hover {
-    background-color: orange;
+    color: orange;
 }
 
 /* Splash Section */
@@ -79,16 +81,17 @@ footer a:hover {
     font-size: 1rem; 
     color: #001A6E;
     font-style: italic;
-    margin-bottom: 1rem; 
+    font-weight: bold;
     text-align: center;
 }
 
 .splash p.tagline {
     font-size: 1rem; 
+    font-weight: bold;
     color: black; 
-    margin-bottom: 1rem;
-    padding-left: 20px;
-    padding-right: 20px; 
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
 }
 /* Horizontal Rules */
 hr {
@@ -115,56 +118,112 @@ section h2 {
 
 /* Paragraph Styles */
 section p { 
- 
+    font-family: "Comic Neue", serif;
+    margin-left: 20px;
+    margin-right:20px;
 }
 
 /* link styles */
-section a {}
-section a:hover {}
+section a {
+    color: green;
+    text-decoration: none;
+}
+section a:hover {
+    color: orange;
+    text-decoration: underline;
+}
 
 /* List Styles */
-ul {}
+ul {
+    display: grid;
+    justify-content: left;
+    flex-direction: column;
+    font-family: "Comic Neue", serif;
 
-dl {}
-dl dt{}
-dl dd{}
+}
+
+dl {
+    display: grid;
+    grid-template-columns: .5fr .5fr;
+    font-family: "Comic Neue", serif;
+    margin-left: 20px;
+    margin-right:20px;
+}
+dl dt{
+    color: black;
+}
+dl dd{
+    color: black;
+}
 
 /* Project Section */
 .three-col {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    grid-column-gap: 20px;
     margin-top: 20px; 
     
 }
 
 .card {
     background: #4DA1A9;
-    border: 2px solid white; 
+    border: 3px solid white; 
     border-radius: 10px; 
-    box-shadow: 6px 6px black;
+    box-shadow: 8px 8px black;
     padding: 15px;
     text-align: center;
 }
 
 .card img {
-    width: auto;
-    height: 150px;
-    border-bottom: 4px solid black; /* Separate image from content */
+    width: 150px;
+    height: auto;
     margin-bottom: 10px;
 }
 
-.card h3 {}
+.card h3 {
+    color: darkgray;
+}
 
 /* Contact Page Styles */
-.one-col {}
+.one-col {
+    align-items: left;
+    font-weight: bold;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    
+}
 
-form {}
+form {
+    font-family: "Galindo", serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #001A6E;
+}
 
-form input, form textarea {}
+form input, form textarea {
+    background-color: whitesmoke;
+    font-family: "Galindo", serif;
+    margin-bottom: 20px;
+    width: 350px;
+    border: 3px solid black;
+}
 
-form input:focus, form textarea:focus {}
+form input:focus, form textarea:focus {
+    background-color: beige;
+}
 
-form button {}
+form button {
+    font-family: "Galindo", serif;
+    font-weight: 700;
+    background-color: #001A6E;
+    color: white;
+    text-align: left;
+    height: 25px;
+    max-width: fit-content;
+    margin-bottom: 16vh;
+    }
 
-form button:hover {}
+form button:hover {
+    background-color: lightsteelblue;
+}
